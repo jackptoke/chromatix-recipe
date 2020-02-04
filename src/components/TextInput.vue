@@ -25,16 +25,20 @@ export default {
 
 <style scoped>
     .TContainer{
-        margin: 20px 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px; 
         display: flex;
         flex-direction: column;
+        /* border: 1px solid blue; */
         /* widows: 25%; */
     }
 
     .TContainer input {
         font-size: 1em;
         height: 30px;
-        width: 100%;
+        /* width: 100%; */
+        
     }
 
     .TContainer label{

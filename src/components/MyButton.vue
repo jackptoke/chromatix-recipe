@@ -37,7 +37,8 @@ export default {
 </script>
 <style scoped>
     .TContainer{
-        margin: 37px 20px;
+        margin: 28px 20px;
+        /* border: 1px solid blue; */
     }
 
     .button {
@@ -46,7 +47,7 @@ export default {
         width: 100px;
         border: none;
         background-color: #f38200;
-        padding: 10px 10px;
+        padding: 9px 10px;
         font-size: 15px;
         cursor: pointer;
         text-align: center;

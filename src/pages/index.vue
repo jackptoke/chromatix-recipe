@@ -17,7 +17,6 @@
           </div>
 
           <div v-if="this.recipes" class="content">
-            <h1>Shown</h1>
             <RecipeCard v-for="recipe in this.recipes" :key="recipe.id" :recipe="recipe"/>
           </div>
       </div>
@@ -108,6 +107,7 @@ export default {
   align-items: center;
   background-color: #1d1d1d;
   /* height: 80px; */
+  /* border: 1px solid red; */
   width: 70vw;
 }
 .input-container{
@@ -120,8 +120,8 @@ export default {
 }
 
 .x-container{
-  background-color: whitesmoke;
-  margin-top: 20px;
+  background-color: white;
+  margin-top: 0px;
   padding: 30px 30px;
   /* border: 1px solid blue; */
   /* width: 70vw; */

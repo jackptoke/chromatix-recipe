@@ -34,17 +34,17 @@ export default {
 
 <style lang="postcss" scoped>
     .RContainer{
-        margin: 20px 20px;
+        margin: 3px 20px;
         width: calc(70vw-100px);
-        background-color: wheat;
+        background-color: whitesmoke;
         padding: 20px 20px;
         display: flex;
         flex-direction: row;
     }
     .recipe-title{
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
-        font-weight: bolder;
+        font-family:Helvetica, Arial, sans-serif;
+        font-size: 23px;
+        font-weight:bolder;
         text-align: center;
         width: 100%;
         /* border: 1px solid blue; */
@@ -72,9 +72,9 @@ export default {
 
     .ingredient {
         margin: 20px 20px;
-        background-color: #ddd;
+        background-color: rgb(228, 228, 228);
         border: none;
-        color: black;
+        color: rgb(32, 32, 32);
         padding: 10px 20px;
         text-align: center;
         text-decoration: none;
@@ -82,6 +82,8 @@ export default {
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 16px;
+        font-size: 12px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     .recipe-link-container{
