@@ -12,7 +12,7 @@ import { mapState } from 'vuex';
 export default {
     methods: {
     onClick(){
-        const numOfRecipes = 5;
+        const numOfRecipes = 10;
         RecipeService.getRecipes(this.ingredients, numOfRecipes)
         .then(response =>{
             const recipes = response.data.hits.map(recipeObj => recipeObj.recipe);

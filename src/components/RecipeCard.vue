@@ -11,9 +11,9 @@
                 <div class="ingredient" v-for="label in recipe.healthLabels" :key="label">{{ label }}</div>
             </div>
            
-            <div class="recipe-link">
-                <router-link :to="{ name: 'recipe', query: { label: recipe.label }}">View Recipe
-                </router-link>
+            <div class="recipe-link-container">
+                <a class="recipe-link" :href="recipe.url" target="_blank">VIEW RECIPE <font-awesome-icon :icon="['fas', 'chevron-right']" />
+                </a>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@ export default {
 <style lang="postcss" scoped>
     .RContainer{
         margin: 20px 20px;
-        width: calc(70vw-40px);
+        width: calc(70vw-100px);
         background-color: wheat;
         padding: 20px 20px;
         display: flex;
@@ -84,10 +84,17 @@ export default {
         border-radius: 16px;
     }
 
+    .recipe-link-container{
+        margin: 10px 30px;
+        /* border: 1px solid blue; */
+    }
     .recipe-link{
         margin: 10px 30px;
         text-decoration: none;
-
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+        color: orange;
     }
 
 </style>

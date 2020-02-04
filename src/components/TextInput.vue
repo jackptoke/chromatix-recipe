@@ -1,6 +1,6 @@
 <template>
     <div class="TContainer">
-        <label>Ingredient</label>
+        <label>Ingredient {{ index }} </label>
         <input type="text" v-on:change="onChange"/>
     </div>
 </template>
@@ -32,7 +32,7 @@ export default {
     }
 
     .TContainer input {
-        font-size: 0.75em;
+        font-size: 1em;
         height: 30px;
         width: 100%;
     }

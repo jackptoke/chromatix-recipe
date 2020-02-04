@@ -7,11 +7,11 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     ingredients: ["", "", ""],
-    recipes: [
-      { label: "Chicken Curry", healthLabels: ["potato", "chicken", "tomatoes"], image: "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/buffalo-wings.jpg" },
-      { label: "Chicken Curry", healthLabels: ["potato", "chicken", "tomatoes"], image: "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/07/texas-bbq-medley-.jpg?itok=5oSXHSK4" },
-      { label: "Chicken Curry", healthLabels: ["potato", "chicken", "tomatoes"], image: "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/buffalo-wings.jpg" }
-    ],
+    recipes: null /*[
+      { label: "Chicken Curry", healthLabels: ["potato", "chicken", "tomatoes"], image: "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/buffalo-wings.jpg", url: "https://www.marthastewart.com/353269/baked-potato-snack" },
+      { label: "Chicken Curry", healthLabels: ["potato", "chicken", "tomatoes"], image: "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/07/texas-bbq-medley-.jpg?itok=5oSXHSK4", url: "https://www.marthastewart.com/353269/baked-potato-snack" },
+      { label: "Chicken Curry", healthLabels: ["potato", "chicken", "tomatoes"], image: "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/buffalo-wings.jpg", url: "https://www.marthastewart.com/353269/baked-potato-snack" }
+    ]*/,
     recipe: {label: "Chicken Curry", ingredients: ["potato", "chicken", "tomatoes"], image: "@/assets/logo.png"},
     numberOfRecipes: 20
   },
