@@ -1,8 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
+import store from './store/store'
+import TextInput from '@/components/TextInput';
+import MyButton from '@/components/MyButton';
 
-Vue.config.productionTip = false
+Vue.component('TextInput', TextInput);
+Vue.component('MyButton', MyButton);
 
 new Vue({
-  render: h => h(App),
+  router,
+  store,
+  render: h => h(App)
 }).$mount('#app')
